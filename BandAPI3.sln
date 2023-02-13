@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandAPI3", "BandAPI3\BandAPI3.csproj", "{A278198A-642A-4E63-993C-A01BA16B48AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A278198A-642A-4E63-993C-A01BA16B48AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A278198A-642A-4E63-993C-A01BA16B48AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A278198A-642A-4E63-993C-A01BA16B48AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A278198A-642A-4E63-993C-A01BA16B48AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79BFDAD7-E500-4BA2-B8D0-94F5C9E29CEB}
+	EndGlobalSection
+EndGlobal
