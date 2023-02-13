@@ -1,5 +1,8 @@
+using BandAPI.DbContexts;
+using BandAPI3.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -19,8 +22,11 @@ namespace BandAPI3
       public void ConfigureServices(IServiceCollection services)
       {
          services.AddControllers();
-         // services.adddbcontext<bandalbumcontext>(options =>
-         //options.usesqlserver(configuration.getconnectionstring("defaultconnection")));
+         services.AddScoped<IBandAlbumRepository, BandAlbumRepository>();
+         services.AddDbContext<BandAlbumContext>(options =>
+         {
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+         });
       }
 
       // this method gets called by the runtime. use this method to configure the http request pipeline.
